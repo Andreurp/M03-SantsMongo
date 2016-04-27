@@ -66,15 +66,15 @@ public class SampleController implements Initializable{
 			
 			if((sants.size()==1 && (sants.get(0).equals("1 de gener") || sants.get(0).equals("01 de gener"))) || resultats.get("sants")==null){
 				
-				String observacio = (String) resultats.get("observacions");
-				if (observacio != null) {
-					lvNom.getItems().add(observacio);
-				} else {
+				String observacions = (String) resultats.get("observacions");
+				if(observacions != null){
+					lvNom.getItems().add(observacions);
+				}else{
 					lvNom.getItems().add("No hi ha cap observació");
 				}
-			} else {
+			}else{
 				
-				for (String data : sants) {
+				for(String data : sants){
 					lvNom.getItems().add("- "+data+" -\n");
 				}
 			}	
