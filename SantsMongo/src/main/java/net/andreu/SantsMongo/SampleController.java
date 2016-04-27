@@ -52,10 +52,10 @@ public class SampleController implements Initializable{
 		
 		if(resultats==null){
 			
-			Alert alert = new Alert(AlertType.WARNING);
-			alert.setTitle("Warning Dialog");
-			alert.setHeaderText("Look, a Warning Dialog");
-			alert.setContentText("Careful with the next step!");
+			Alert alert = new Alert(AlertType.INFORMATION);
+			alert.setTitle("Information Dialog");
+			alert.setHeaderText("Look, an Information Dialog");
+			alert.setContentText("No hi ha cap coincidencia amb aquest mon");
 
 			alert.showAndWait();
 			lblNom.setText("");
